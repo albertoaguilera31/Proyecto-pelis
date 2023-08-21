@@ -51,7 +51,10 @@ export const Listado = ({listadoState, setListadoState}) => {
                 {/*aparece formulario de editar*/}
               {editar === peli.id && (
 
-                <Editar/>
+                <Editar peli={peli} 
+                        conseguirPeliculas={conseguirPeliculas}
+                        setEditar={setEditar}
+                        setListadoState={setListadoState}/>
                 
               )}
             </article>
